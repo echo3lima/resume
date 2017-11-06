@@ -1,7 +1,20 @@
-// Navbar CSS
+// Bootstrap installation
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar-nav > li {
+// Navbar CSS
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+      padding: 0 20px 0 20px ;
+    font-size: 25px;
+    }
+  }
+/*.navbar-nav > li {
     padding: 0 20px 0 20px ;
+    font-size: 25px;
 }
+*/
