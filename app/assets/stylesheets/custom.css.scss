@@ -1,8 +1,15 @@
-// Bootstrap installation
+// Bootstrap installation-------------------------------------------------------
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// Navbar CSS
+.row {
+    margin-left: 0px; 
+    margin-right: 0px; 
+}
+
+// Navbar CSS-------------------------------------------------------------------
+
 .navbar-inverse{
     background: #10101000;
     border-color: #10101000;
@@ -32,7 +39,9 @@
       box-shadow: none;
     }
 }
-//Welcome landing page 
+
+//Welcome landing page----------------------------------------------------------
+
 html, body {
     margin: 0;
     padding: 0;
@@ -47,12 +56,12 @@ html, body {
         top: 0;
         background-size: cover;
         .inner {
-        height: 100%;
-        width: 100%;
-        .row {
-            margin-left: 0px; 
-            margin-right: 0px; 
-}
+            height: 100%;
+            width: 100%;
+            .row {
+                margin-left: 0px; 
+                margin-right: 0px; 
+            }
         }
         .content {
             margin-top: 8%;
@@ -65,3 +74,37 @@ html, body {
     }
 }
 
+//About section-----------------------------------------------------------------
+
+.about {
+    height: 100%;
+    width: 100%;
+    display: table;
+    margin: auto;
+    top: 0;
+    background-color: #11203d;
+    color: #f4f4f4;
+    .im-eric {
+        text-align: center;
+        margin-top: 35px;
+        font-size: 40px;
+    }
+    .about-pic {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url("me.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        display: block;
+    }
+    .about-text {
+        margin-bottom: 70px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+//Technical Skills--------------------------------------------------------------
