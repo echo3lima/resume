@@ -93,7 +93,7 @@ html, body {
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        background: url("me.jpg") no-repeat 50% 50%;
+        background: url("profile.jpg") no-repeat 50% 50%;
         background-size: cover;
         height: 200px;
         width: 200px;
@@ -108,3 +108,32 @@ html, body {
 }
 
 //Technical Skills--------------------------------------------------------------
+.skills {
+    background-color: #f2f2f2;
+    .technical-skills {
+        text-align: center;
+        margin-top: 35px;
+        font-size: 40px;
+    }
+    .skills-list {
+        list-style: none;
+        text-align: center;
+        padding: 0 0 0 0;
+        li {
+            display: inline;
+            img {
+                 margin: 0 3.5% 0 3.5%;
+                 padding: 20px 0 20px 0;
+            }
+            .language-logos-hcj {
+                width: 60px;
+            }
+            .language-logos-jr {
+                width: 80px;
+            }
+            .language-logo-b {
+                width: 120px;
+            }
+        }
+    }
+}
