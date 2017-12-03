@@ -1,8 +1,11 @@
-// Bootstrap installation-------------------------------------------------------
-
+// Bootstrap and Font-awesome installation--------------------------------------
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
+html {
+    background-color: #11203d;
+}
 .row {
     margin-left: 0px; 
     margin-right: 0px; 
@@ -157,13 +160,14 @@ html, body {
         position: relative;
         display: table;
         .margin-code { // The margin must be adjusted if you change any elements size inside the div content.
-            margin: 18%;
+            margin: 19%;
             font-size: 25px;
             color: rgba(0, 0, 0, 0);;
         }
         .more-text {
             text-align: center;
             color: #f4f4f4;
+            margin-bottom: 25px;
             
         }
     }
@@ -212,3 +216,43 @@ html, body {
     opacity: 0;
 }
 
+
+//Contact---------------------------------------------------------------
+.contact {
+    background-color: #11203d;
+    height: 30%;
+    .contact-el-logo {
+        margin: 50px auto 35px;
+        height: 40px;
+        width: 40px;
+        display: block;
+    }
+    .footer-icons-row {
+        text-align: center;
+        .footer-icons {
+            border-style: solid;
+            border-color: #0a172e;
+            border-radius: 100%;
+            margin-top: 15px;
+            margin-left: 3px;
+            margin-right: 3px;
+            color: #f4f4f4;
+            padding: 6px;
+            background-color: #0a172e;
+        }
+        
+    }
+    .email {
+        display: block;
+        text-align: center;
+        color: #f4f4f4;
+        margin-top: 15px;
+        display: none;
+        
+    }
+    .created-by {
+        text-align: center;
+        color: #f4f4f4;
+        
+    }
+}

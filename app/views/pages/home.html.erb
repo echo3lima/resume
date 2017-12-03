@@ -87,7 +87,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac luctus dui. Donec porta sem sit amet semper eleifend. Praesent ullamcorper porttitor interdum. Ut ultricies, nisl eget aliquam mollis, purus velit volutpat arcu, quis semper odio tellus et turpis. Fusce varius, odioa posuere gravida, eros erat vulputate purus, euismod commodo nisl augue condimentum urna. Nunc tempus sagittis dapibu 
         </p>
         <div class = "row">
-          <h4 class = "more-text col-md-4 col-md-offset-4">MORE PROJECTS COMMING SOON</h4>
+          <h4 class = "more-text col-md-4 col-md-offset-4">MORE PROJECTS COMING SOON</h4>
         </div>
         </div>
         <div class = "content">
@@ -117,22 +117,53 @@
     
     
     
+    <section class = "contact">
+      <%= image_tag("EL-icon-white.png", :class => "contact-el-logo")%>
+      <p class = "created-by">
+        CREATED BY YOURS TRULY
+      </p>
+      <div class = "row footer-icons-row">
+        <a href = "https://github.com/echo3lima"><i class="fa fa-github fa-lg footer-icons"></i></a>
+        <a href = "https://stackoverflow.com/users/8956182/echo3lima?tab=profile"><i class="fa fa-stack-overflow fa-lg footer-icons"></i></a>
+        <a href = "https://www.linkedin.com/in/eric-lobatos-818b16152/"><i class="fa fa-linkedin fa-lg footer-icons"></i></a>
+        <i class="fa fa-envelope fa-lg footer-icons"></i>
+      </div>
+      
+        <p class = "email">
+          ERIC_LOBATOS@YAHOO.COM
+        </p>
+      
+    </section>
+    
+    
+    
+    
+    
+    
  
     
 
 <script>
-$('.portfolio').waypoint(function(direction) { 
-  if (direction === 'down') {
-    $('.pic-bg').removeClass('invisble');
-    $('.devmatch-text').removeClass('invisble');
-  } else {
-    $('.pic-bg').addClass('invisble');
-    $('.devmatch-text').addClass('invisble');
-  }
-        }, { offset: '30%' }
+  $('.portfolio').waypoint(function(direction) { 
+    if (direction === 'down') {
+      $('.pic-bg').removeClass('invisble');
+      $('.devmatch-text').removeClass('invisble');
+    } else {
+      $('.pic-bg').addClass('invisble');
+      $('.devmatch-text').addClass('invisble');
+    }
+          }, { offset: '30%' }
   );
 </script>
     
+<script>
+  $(document).ready(function() {
+    $('.fa-envelope').click(function() {
+      $('.email').slideToggle('slow');
+    });
+  });
+
+</script>
     
     
  
