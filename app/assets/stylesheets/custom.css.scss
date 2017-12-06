@@ -280,14 +280,19 @@ html, body {
         }
         
     }
-    .email {
+    .email-container {
+        margin-bottom: 15px;
+        height: 40px;
+        .email {
         display: block;
         text-align: center;
         color: #f4f4f4;
         margin-top: 15px;
         display: none;
         
+        }
     }
+    
     .created-by {
         text-align: center;
         color: #f4f4f4;

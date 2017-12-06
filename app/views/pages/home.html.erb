@@ -130,11 +130,11 @@
         <a href = "https://www.linkedin.com/in/eric-lobatos-818b16152/"><i class="fa fa-linkedin fa-lg footer-icons"></i></a>
         <i class="fa fa-envelope fa-lg footer-icons"></i>
       </div>
-      
+      <div class= "email-container">
         <p class = "email">
           ERIC_LOBATOS@YAHOO.COM
         </p>
-      
+      </div>
       
     </section>
 </body>   
@@ -156,7 +156,7 @@
   $(document).ready(function() {
     $('.greeting').fadeIn(1000);
     $('.fa-envelope').click(function() { 
-      $('.email').slideToggle('slow');
+      $('.email').fadeIn('slow');
     });
     setBindings('a[href^="#"]');
     setBindings('.el-logo');
