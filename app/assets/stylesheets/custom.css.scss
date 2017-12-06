@@ -3,32 +3,51 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
 html {
     background-color: #11203d;
+    font-family: 'Open Sans', times;
 }
 .row {
     margin-left: 0px; 
     margin-right: 0px; 
 }
 
-// Navbar CSS-------------------------------------------------------------------
+.el-logo {
+    height: 35px;
+    width: 35px;
+}
+// Navbar-----------------------------------------------------------------------
 
 .navbar-inverse{
     background: #10101000;
     border-color: #10101000;
     .navbar-nav > li {
         a {
-            color: #d6d6d6;
+            color: #b5b4b4;
+            transition: all .5s;
+            padding-bottom: 0;
+            border-bottom: solid transparent;
+            font-family: 'Open Sans', times;
+            
         }
         a:hover {
             color: #f4f4f4;
-            text-decoration: underline;
+            border-bottom: solid #f4f4f4;
+            transition: all .5s;
+            padding-bottom: 0;
         } 
     }
 }
 
 .navbar {
     border: 0px;
+    .nav-logo {
+        position: fixed;
+        z-index: 1;
+        opacity: .8;
+        margin: 8px 10px;
+    }
     .navbar-nav {
       display: inline-block;
       float: none;
@@ -36,9 +55,17 @@ html {
       padding: 0 20px 0 20px ;
       font-size: 20px;
     }
+    .navbar-toggle {
+        border-color: transparent;
+        transition: all 1s;
+    }
+    .navbar-toggle:hover {
+        background-color: rgba(51, 51, 51, .5);
+        transition: all 1s;
+    }
     .navbar-collapse {
       text-align: center;
-      border-color: #10101000;
+      border-color: transparent;
       box-shadow: none;
     }
 }
@@ -50,14 +77,24 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    p {
+        font-family: 'Open Sans', times;
+    }
     .welcome {
         height: 100%;
         width: 100%;
-        margin: auto;
-        background: url("pug.jpg") no-repeat 50% 50% ;
+        margin: auto ;
+        background: url("city.png") no-repeat 50% 50% ;
         display: table;
         top: 0;
         background-size: cover;
+        
+        .bg-tint {
+            background-color: rgba(0, 0, 0, .5);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
         .inner {
             height: 100%;
             width: 100%;
@@ -67,11 +104,12 @@ html, body {
             }
         }
         .content {
-            margin-top: 8%;
+            margin-top: 11%;
             .greeting {
                 text-align: center;
                 color: #f4f4f4;
                 font-size: 50px;
+                
             }
         }
     }
@@ -93,7 +131,7 @@ html, body {
         font-size: 40px;
     }
     .about-pic {
-        margin-top: 10px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         background: url("profile-pic.jpg") no-repeat 50% 50%;
@@ -105,8 +143,9 @@ html, body {
     }
     .about-text {
         margin-bottom: 70px;
-        margin-top: 20px;
+        margin-top: 50px;
         text-align: center;
+        
     }
 }
 
@@ -162,7 +201,7 @@ html, body {
         .margin-code { // The margin must be adjusted if you change any elements size inside the div content.
             margin: 19%;
             font-size: 25px;
-            color: rgba(0, 0, 0, 0);;
+            color: rgba(0, 0, 0, 0);
         }
         .more-text {
             text-align: center;
@@ -221,10 +260,8 @@ html, body {
 .contact {
     background-color: #11203d;
     height: 30%;
-    .contact-el-logo {
+    .contact-logo {
         margin: 50px auto 35px;
-        height: 40px;
-        width: 40px;
         display: block;
     }
     .footer-icons-row {
@@ -256,3 +293,4 @@ html, body {
         
     }
 }
+
