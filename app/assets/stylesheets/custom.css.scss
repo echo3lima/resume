@@ -189,28 +189,7 @@ html, body {
     position: relative;
     background-color: black;
     display: table;
-    .pic-bg {
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        background: url("Dev-match-screen-shot-dark.jpg") 50% 50% no-repeat;
-        transition: all 1s;
-        background-size: cover;
-        position: relative;
-        display: table;
-        .margin-code { // The margin must be adjusted if you change any elements size inside the div content.
-            margin: 19%;
-            font-size: 25px;
-            color: rgba(0, 0, 0, 0);
-        }
-        .more-text {
-            text-align: center;
-            color: #f4f4f4;
-            margin-bottom: 25px;
-            text-decoration: underline;
-            
-        }
-    }
+    
     .content { //Refrence the p tag in the .pic-bg div if you change any attreibute within this div tag.
         height: 100%;
         width: 100%;
@@ -248,6 +227,28 @@ html, body {
         .dev-match-logo {
             width: 200px;
             margin: 30px 15px 15px 15px;
+        }
+    }
+    .pic-bg {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background: url("Dev-match-screen-shot-dark.jpg") 50% 50% no-repeat;
+        transition: all 1s;
+        background-size: cover;
+        position: relative;
+        display: table;
+        .margin-code { // The margin must be adjusted if you change any elements size inside the div content.
+            margin: 19%;
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0);
+        }
+        .more-text {
+            text-align: center;
+            color: #f4f4f4;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            
         }
     }
 }
