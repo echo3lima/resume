@@ -1,180 +1,147 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src = "main.js"></script>
 
-<body>
-    <section class= "welcome" id = "welcomeSection">
-        <div class= "inner">
-          <div class = "bg-tint"></div>
-          <nav class="navbar transpernet navbar-inverse">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <%= link_to image_tag("EL-icon-grey.png", :class => "nav-logo el-logo", :id => "welcome"), "#welcomeSection"%>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li><a id= "about" href="#aboutSection">ABOUT</a></li>
-                  <li><a id= "skills" href="#skillsSection">SKILLS</a></li>
-                  <li><a id= "portfolio" href="#portfolioSection">PORTFOLIO</a></li>
-                  <li><a id= "contact" href="#contactSection">CONTACT</a></li>
-                  <li><a id= "resume" href="#resumeSection">RESUME</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-           <div class= "row">
-              <div class = 'col-md-6 col-md-offset-3 content'>
-                <div class= "greeting">
-                  <p >What I seek is growth and challenge.</p>
-                </div>
-              </div>
+
+<section class= "landingPage" id = "landingPageSection">
+    <div class= "inner">
+      
+      <div class = "bg-tint"></div>
+      
+        <nav class="navbar transpernet navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <%= link_to image_tag("EL-icon-grey.png", :class => "nav-logo el-logo", :id => "landingPage"), "#landingPageSection"%>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
-        </div>
-    </section>
-    
-    
-    <section class= "about" id= "aboutSection">
-      <div class= "row">
-        <div class= "col-md-4 col-md-offset-4 im-eric">
-          <p>About</p>
-        </div>
-      </div>
-      <div class= "about-pic"></div>
-      <div class= "row">   
-        <div class= "col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 about-text">
-          <p>
-            My name is Eric Lobatos, Bay Area native, self-taught Web Developer. I have been developing code for a year and now currently seeking to acquire an Entry level full stack Web-Developer position to expand my knowledge furthermore and to provide honest hard work. Familiar with both front-end and back-end. Capable of communicating and understanding plans and ideas. And if there is anything the Marines have taught me, it is the ability to never give up.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section class= "skills" id= "skillsSection">
-      <div class= "row">
-        <div class= "col-md-4 col-md-offset-4 technical-skills">
-          <p>Technical Skills</p>
-        </div>
-      </div>
-      <div class= "row">
-        <div class= "col-lg-12 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-          <ul class= "skills-list">
-            <li><%= image_tag("html-logo.png", :class => "language-logos-hcj")%></li>
-            <li><%= image_tag("css-logo.png", :class => "language-logos-hcj")%></li>
-            <li><%= image_tag("js-logo.png", :class => "language-logos-hcj")%></li>
-            <li><%= image_tag("jQuery.gif", :class => "language-logos-jr")%></li>
-            <li><%= image_tag("rubyonrails.png", :class => "language-logos-jr")%></li>
-            <li><%= image_tag("bootstrap-logo.png", :class => "language-logo-b")%></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    
-    <section class= "portfolio" id= "portfolioSection">
-      <div class = "pic-bg invisble">
-        <p class = "margin-code"><!--This sentence is used to keep .devmatch-text inside the .pic-bg div (keep it the same as whats in devmatch-text-->
-        Dev Match is a community of developers, entrepreneurs, and investors who are interested in meeting one another and sharing ideas. Dev Match is a fully responsive website aided by the Bootstrap library, that uses the Stripe API that allows the website to collect monthly payments from members that have a PRO membership (currently in test mode). All members are able to create and update and view profiles. This website was built utilizing (HTML, CSS, JS, Jquery, Ruby On Rails). Want to see the code on Github? click 
-        </p>
-        <div class = "row">
-          <p class = "more-text col-md-4 col-md-offset-4">More Projects Coming Soon</p>
-        </div>
-        </div>
-        
-        <div class = "content">
-          <div class= "row">
-            <div class= "col-md-4 col-md-offset-4 ">
-              <p class= "portfolio-heading">Portfolio</p>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a id= "about" href="#aboutSection">ABOUT</a></li>
+                <li><a id= "skills" href="#skillsSection">SKILLS</a></li>
+                <li><a id= "portfolio" href="#portfolioSection">PORTFOLIO</a></li>
+                <li><a id= "contact" href="#contactSection">CONTACT</a></li>
+                <li><a id= "resume" href="#resumeSection">RESUME</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      
+       <div class= "row">
+          <div class = 'col-md-6 col-md-offset-3 content'>
+            <div class= "greeting">
+              <p >What I seek is growth and challenge.</p>
             </div>
           </div>
-          <div class= "row">
-            <div class= "col-lg-3 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-                <div class= "img-box people-img">
-                  <%= link_to image_tag("dev-match-logo.png", :class => "dev-match-logo"), "https://stormy-inlet-59575.herokuapp.com/"%>
-                </div>
-            </div>
-            <div class= "text-container col-lg-5 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-              <p class= "devmatch-text invisble">
-                Dev Match is a community of developers, entrepreneurs, and investors who are interested in meeting one another and sharing ideas. Dev Match is a fully responsive website aided by the Bootstrap library, that uses the Stripe API that allows the website to collect monthly payments from members that have a PRO membership (currently in test mode). All members are able to create and update and view profiles. This website was built utilizing (HTML, CSS, JS, Jquery, Ruby On Rails). Want to see the code on Github? click 
-                <%= link_to "here", "https://github.com/echo3lima/simplecodecasts_saas" %>.
-              </p>
-              
-            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class= "about" id= "aboutSection">
+  <div class= "row">
+    <div class= "col-md-4 col-md-offset-4 im-eric">
+      <p>About</p>
+    </div>
+  </div>
+  <div class= "about-pic"></div>
+  <div class= "row">   
+    <div class= "col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 about-text">
+      <p>
+        My name is Eric Lobatos, Bay Area native, self-taught Web Developer. I have been developing code for a year and now currently seeking to acquire an Entry level full stack Web-Developer position to expand my knowledge furthermore and to provide honest hard work. Familiar with both front-end and back-end. Capable of communicating and understanding plans and ideas. And if there is anything the Marines have taught me, it is the ability to never give up.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class= "skills" id= "skillsSection">
+  <div class= "row">
+    <div class= "col-md-4 col-md-offset-4 technical-skills">
+      <p>Technical Skills</p>
+    </div>
+  </div>
+  <div class= "row">
+    <div class= "col-lg-12 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+      <ul class= "skills-list">
+        <li><%= image_tag("html-logo.png", :class => "language-logos-hcj")%></li>
+        <li><%= image_tag("css-logo.png", :class => "language-logos-hcj")%></li>
+        <li><%= image_tag("js-logo.png", :class => "language-logos-hcj")%></li>
+        <li><%= image_tag("jQuery.gif", :class => "language-logos-jr")%></li>
+        <li><%= image_tag("rubyonrails.png", :class => "language-logos-jr")%></li>
+        <li><%= image_tag("bootstrap-logo.png", :class => "language-logo-b")%></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class= "portfolio" id= "portfolioSection">
+  <div class = "pic-bg invisble">
+    <p class = "margin-code"><!--This sentence is used to keep .devmatch-text inside the .pic-bg div (keep it the same as whats in devmatch-text-->
+    Dev Match is a community of developers, entrepreneurs, and investors who are interested in meeting one another and sharing ideas. Dev Match is a fully responsive website aided by the Bootstrap library, that uses the Stripe API that allows the website to collect monthly payments from members that have a PRO membership (currently in test mode). All members are able to create and update and view profiles. This website was built utilizing (HTML, CSS, JS, Jquery, Ruby On Rails). Want to see the code on Github? click 
+    </p>
+    <div class = "row">
+      <p class = "more-text col-md-4 col-md-offset-4">More Projects Coming Soon</p>
+    </div>
+    </div>
+    
+    <div class = "content">
+      <div class= "row">
+        <div class= "col-md-4 col-md-offset-4 ">
+          <p class= "portfolio-heading">Portfolio</p>
         </div>
       </div>
-    </section>
+      <div class= "row">
+        <div class= "col-lg-3 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+            <div class= "img-box people-img">
+              <%= link_to image_tag("dev-match-logo.png", :class => "dev-match-logo"), "https://stormy-inlet-59575.herokuapp.com/"%>
+            </div>
+        </div>
+        <div class= "text-container col-lg-5 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+          <p class= "devmatch-text invisble">
+            Dev Match is a community of developers, entrepreneurs, and investors who are interested in meeting one another and sharing ideas. Dev Match is a fully responsive website aided by the Bootstrap library, that uses the Stripe API that allows the website to collect monthly payments from members that have a PRO membership (currently in test mode). All members are able to create and update and view profiles. This website was built utilizing (HTML, CSS, JS, Jquery, Ruby On Rails). Want to see the code on Github? click 
+            <%= link_to "here", "https://github.com/echo3lima/simplecodecasts_saas" %>.
+          </p>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class = "contact" id= "contactSection">
+  <%= link_to image_tag("EL-icon-off-wht.png", :class => "contact-logo el-logo", :id => "landingPage"), "#landingPageSection"%>
+  <p class = "created-by">
+    CREATED BY YOURS TRULY
+  </p>
+  <div class = "row footer-icons-row">
+    <a href = "https://github.com/echo3lima"><i class="fa fa-github fa-lg footer-icons"></i></a>
+    <a href = "https://stackoverflow.com/users/8956182/echo3lima?tab=profile"><i class="fa fa-stack-overflow fa-lg footer-icons"></i></a>
+    <a href = "https://www.linkedin.com/in/eric-lobatos-818b16152/"><i class="fa fa-linkedin fa-lg footer-icons"></i></a>
+    <i class="fa fa-envelope fa-lg footer-icons"></i>
+  </div>
+  <div class= "email-container">
+    <p class = "email">
+      ERIC_LOBATOS@YAHOO.COM
+    </p>
+  </div>
+</section>
+
     
-    
-    
-    
-    
-    
-    
-    <section class = "contact" id= "contactSection">
-      <%= link_to image_tag("EL-icon-off-wht.png", :class => "contact-logo el-logo", :id => "welcome"), "#welcomeSection"%>
-      <p class = "created-by">
-        CREATED BY YOURS TRULY
-      </p>
-      <div class = "row footer-icons-row">
-        <a href = "https://github.com/echo3lima"><i class="fa fa-github fa-lg footer-icons"></i></a>
-        <a href = "https://stackoverflow.com/users/8956182/echo3lima?tab=profile"><i class="fa fa-stack-overflow fa-lg footer-icons"></i></a>
-        <a href = "https://www.linkedin.com/in/eric-lobatos-818b16152/"><i class="fa fa-linkedin fa-lg footer-icons"></i></a>
-        <i class="fa fa-envelope fa-lg footer-icons"></i>
-      </div>
-      <div class= "email-container">
-        <p class = "email">
-          ERIC_LOBATOS@YAHOO.COM
-        </p>
-      </div>
-      
-    </section>
-</body>   
-    
-<script>
-  $('.portfolio').waypoint(function(direction) { 
-    if (direction === 'down') {
-      $('.pic-bg').removeClass('invisble');
-      $('.devmatch-text').removeClass('invisble');
-    } else {
-      $('.pic-bg').addClass('invisble');
-      $('.devmatch-text').addClass('invisble');
-    }
-          }, { offset: '30%' }
-  );
-</script>
-    
-<script>
-  $(document).ready(function() {
-    $('.greeting').fadeIn(1000);
-    $('.fa-envelope').click(function() { 
-      $('.email').fadeIn('slow');
-    });
-    setBindings('a[href^="#"]');
-    setBindings('.el-logo');
-  });
-  
-    function setBindings(target) {
-    $(target).click(function(e) {
-      e.preventDefault();
-      
-      const sectionID = e.currentTarget.id + "Section";
-      
-      $("html, body").animate({
-        scrollTop: $("#" + sectionID).offset().top
-      }, 1000);
-    });
-  };
-  
-</script>
+
     
     
  
