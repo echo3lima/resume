@@ -25,7 +25,7 @@ $(document).ready(function() {
     function setBindings(target) {
         $(target).click(function(e) {
           e.preventDefault();
-          const sectionID = e.currentTarget.id + "Section";
+          var sectionID = e.currentTarget.id + "Section";
           
           $("html, body").animate({
             scrollTop: $("#" + sectionID).offset().top
